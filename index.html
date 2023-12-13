@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validation</title>
+    <!--Links Styles-->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!--Links Script-->
+    <script src="./src/js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Age Validation</h1>
+    </header>
+
+    <main class="main-container">
+        <section class="container">
+            <label for="txtano">Ano de Nascimento:</label>
+            <input type="number" name="txtano" id="txtano" min="0" max="200">
+
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </div>
+   
+            <button id="btn-verificar" type="submit" value="Verificar">Verificar</button>
+
+            <section id="result">
+                <p>Preencha os dados acima para ver o resultado</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <address>&copy; Diogo Silas</address>
+    </footer>
+</body>
+</html>
