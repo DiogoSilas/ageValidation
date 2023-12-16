@@ -1,6 +1,9 @@
 :root {
+    --bg-color: #68B5A5;
+    --bg-container: #9578ff;
+    --btn-color: #fc586e;
     --cor-branca: #fff;
-    --bg-color: #002200;
+    --fonte-color: #cdcdcd;
 }
 :root{
     --font-padrao: 'Montserrat', sans-serif;

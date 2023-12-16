@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Links Script-->
     <script src="./src/js/script.js" defer></script>
@@ -26,18 +27,20 @@
 
     <main class="main-container">
         <section class="container">
-            <label for="txtano">Ano de Nascimento:</label>
-            <input type="number" name="txtano" id="txtano" min="0" max="9999">
+            <div>
+                <label for="txtano" class="sub-titulo">Ano de Nascimento:</label>
+                <input type="number" name="txtano" id="txtano" min="0" max="9999">
+            </div>
 
             <div class="sexo">
-                <h3>Sexo:</h3>
+                <label class="sub-titulo">Sexo:</label>
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
             </div>
    
-            <button id="btn-verificar" type="submit" value="Verificar">Verificar</button>
+                <button id="btn-verificar" type="button" value="Verificar">Verificar</button>
 
             <section id="result">
                 <p>Preencha os dados acima para ver o resultado</p>
@@ -47,6 +50,9 @@
 
     <footer class="footer">
         <address>&copy; Diogo Silas</address>
+        <a href="https://www.linkedin.com/in/diogosilasds/" alt="linkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/diogosilas_ds/" alt="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/DiogoSilas/ageValidation" alt="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
     </footer>
 </body>
 </html>

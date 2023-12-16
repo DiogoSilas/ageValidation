@@ -1,6 +1,5 @@
 body {
     background-color: var(--bg-color);
-    
 }
 
 .header {
@@ -21,13 +20,24 @@ body {
 }
 
 .main-container .container {
-    background-color: #cdcdcd;
-    max-width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
     width: 100%;
     padding: 20px;
-    margin: 0px 15px;
+    margin: 0px 5px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px #454545;
+    background-color: var(--bg-container);
+
 }
+
+.main-container .container .sub-titulo {
+    font-weight: 700;
+}
+
 .main-container .container input,
 .main-container .container label {
     font-size: 1.2rem;
@@ -38,19 +48,42 @@ body {
     width: 70px;
 }
 
+
+
 .main-container .container #btn-verificar {
-    margin: 10px 0px;
-    padding: 5px;
-    font-size: 1.2rem;
-    border: 2px solid #323232;
-    border-radius: 7%;
+    display: block;
+    width: 90px;
+    font-family: var(--font-padrao);
+    font-weight: 700;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-    
+    box-shadow: 3px 3px 3px #454545;
+    background-color: var(--btn-color);
+}
+
+.main-container .container .foto {
+    margin: 20px 10px;
+    padding: 3px;
+    max-width: 250px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 2px #222327, -3px -3px 3px 2px #454545;
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
     max-width: 1080px;
     margin: auto;
     text-align: center;
     color: var(--cor-branca);
+}
+
+.footer i {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 10px;
 }

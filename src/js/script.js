@@ -12,7 +12,7 @@ btnVerificar.addEventListener("click", function() {
         let formSex = document.getElementsByName("radsex")
         let idade = ano - Number(anoDeNascimento.value)
         let img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        img.setAttribute('class', 'foto')
         let genero = ''
         if(formSex[0].checked) {
             genero = 'Homem'
