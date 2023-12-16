@@ -16,39 +16,41 @@ btnVerificar.addEventListener("click", function() {
         let genero = ''
         if(formSex[0].checked) {
             genero = 'Homem'
-            if(idade >= 0 && idade <= 3) {
-                //bebe
+            if(idade >= 0 && idade <= 2) {
+                img.setAttribute('src', '../src/images/foto-bebe.jpg')
+            } else if(idade >= 3 && idade <= 4) {
                 img.setAttribute('src', '../src/images/foto-bebe-homem.jpg')
-            } else if(idade <= 13) {
-                //criança
+            } else if(idade >= 5 && idade <= 8) {
+                img.setAttribute('src', '../src/images/foto-subcrianca-homem.jpg')
+            } else if(idade >= 9 && idade <= 12) {
                 img.setAttribute('src', '../src/images/foto-crianca-homem.jpg')
-            } else if(idade <= 21) {
-                //jovem
+            } else if(idade >= 13 && idade <= 17) {
+                img.setAttribute('src','../src/images/foto-adolecente-homem.jpg' )
+            } else if(idade >= 18 && idade <= 24) {
                 img.setAttribute('src', '../src/images/foto-jovem-homem.jpg')
-            } else if(idade <= 50) {
-                //adulto
+            } else if(idade >= 25 && idade <= 62) {
                 img.setAttribute('src', '../src/images/foto-adulto-homem.jpg')
-            } else if(idade <= 120) {
-                //idoso
+            } else if(idade >= 63 && idade <= 140) {
                 img.setAttribute('src', '../src/images/foto-idoso-homem.jpg')
             }
 
         } else if(formSex[1]) {
             genero = 'Mulher'
-            if(idade >= 0 && idade <= 3) {
-                //bebe
+            if(idade >= 0 && idade <= 2) {
+                img.setAttribute('src', '../src/images/foto-bebe.jpg')
+            } else if(idade >= 3 && idade <= 4) {
                 img.setAttribute('src', '../src/images/foto-bebe-mulher.jpg')
-            } else if(idade >= 4 && idade <= 13) {
-                //criança
+            } else if(idade >= 5 && idade <= 8) {
+                img.setAttribute('src', '../src/images/foto-subcrianca-mulher.jpg')
+            } else if(idade >= 9 && idade <= 12) {
                 img.setAttribute('src', '../src/images/foto-crianca-mulher.jpg')
-            } else if(idade >= 14 && idade <= 21) {
-                //jovem
+            } else if(idade >= 13 && idade <= 17) {
+                img.setAttribute('src','../src/images/foto-adolecente-mulher.jpg' )
+            } else if(idade >= 18 && idade <= 24) {
                 img.setAttribute('src', '../src/images/foto-jovem-mulher.jpg')
-            } else if(idade >= 22 && idade <= 50) {
-                //adulto
+            } else if(idade >= 25 && idade <= 62) {
                 img.setAttribute('src', '../src/images/foto-adulto-mulher.jpg')
-            } else if(idade >= 51 && idade <= 120) {
-                //idoso
+            } else if(idade >= 63 && idade <= 140) {
                 img.setAttribute('src', '../src/images/foto-idosa-mulher.jpg')
             }
         }
