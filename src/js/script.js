@@ -6,7 +6,7 @@ btnVerificar.addEventListener("click", function() {
     let anoDeNascimento = window.document.getElementById("txtano")
     let result = window.document.querySelector("section#result")
 
-    if(anoDeNascimento.value.length === 0 || Number(anoDeNascimento.value) > ano) {
+    if(anoDeNascimento.value == null || Number(anoDeNascimento.value) > ano) {
         result.innerHTML = `[Erro] Verifique os dados e tende novamente`
     } else {
         let formSex = document.getElementsByName("radsex")
