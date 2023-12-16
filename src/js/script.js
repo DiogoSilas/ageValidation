@@ -1,6 +1,6 @@
 const btnVerificar = window.document.getElementById("btn-verificar")
 
-btnVerificar.addEventListener("click", function() {
+btnVerificar.addEventListener("click", ()=> {
     let data = new Date()
     let ano = data.getFullYear()
     let anoDeNascimento = window.document.getElementById("txtano")
