@@ -6,7 +6,7 @@ btnVerificar.addEventListener("click", function() {
     let anoDeNascimento = window.document.getElementById("txtano")
     let result = window.document.querySelector("section#result")
 
-    if(anoDeNascimento.value == null || Number(anoDeNascimento.value) > ano) {
+    if(anoDeNascimento.value.length === 0 || Number(anoDeNascimento.value) > ano) {
         result.innerHTML = `[Erro] Verifique os dados e tende novamente`
     } else {
         let formSex = document.getElementsByName("radsex")
@@ -32,6 +32,8 @@ btnVerificar.addEventListener("click", function() {
                 img.setAttribute('src', '../src/images/foto-adulto-homem.jpg')
             } else if(idade >= 63 && idade <= 140) {
                 img.setAttribute('src', '../src/images/foto-idoso-homem.jpg')
+            } else if(idade > 141) {
+                img.setAttribute('class', '')
             }
 
         } else if(formSex[1]) {
@@ -52,6 +54,8 @@ btnVerificar.addEventListener("click", function() {
                 img.setAttribute('src', '../src/images/foto-adulto-mulher.jpg')
             } else if(idade >= 63 && idade <= 140) {
                 img.setAttribute('src', '../src/images/foto-idosa-mulher.jpg')
+            } else if(idade >= 141) {
+                img.setAttribute('class', '')
             }
         }
 
