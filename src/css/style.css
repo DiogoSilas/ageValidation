@@ -20,7 +20,6 @@ body {
 
 .main-container .header {
     color: var(--cor-branca);
-
     margin: 15px auto;
     height: 80px;
     display: flex;
@@ -35,7 +34,7 @@ body {
     align-items: center;
     max-width: 400px;
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #454545;
     background-color: var(--bg-container);
